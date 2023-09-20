@@ -1,0 +1,25 @@
+/* Hamburger Menu props*/
+.hamMenuBarBorder {
+    border-radius: 150px;
+}
+
+.hamMenuBarSize {
+    max-width: 50px;
+}
+
+/* Panel props*/
+.panelBorder {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.panelWidth {
+    width: 12rem;
+}
+
+/* li props*/
+.liBg {
+}
+
+.liBg:hover {
+}
