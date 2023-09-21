@@ -1,10 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 
-const Navbar = () => {
+function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleNav = () => {
@@ -49,17 +48,17 @@ const Navbar = () => {
                     <li
                         className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
                     >
-                        <a href="#">Thing one</a>
+                        <a href="#welcome-page">Welcome page</a>
                     </li>
                     <li
                         className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
                     >
-                        <a href="#">Thing two</a>
+                        <a href="#portfolio-page">Thing two</a>
                     </li>
                 </ul>
             </div>
         </div>
     );
-};
+}
 
 export default Navbar;

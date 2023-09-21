@@ -1,7 +1,15 @@
-export default function MainPage() {
+import PageContentHolder from "@/components/PageContentHolder";
+
+function HomePage() {
     return (
         <main>
-            <div></div>
+            <PageContentHolder href="welcome-page">
+                <div className="bg-slate-500 h-full bg-[url('../../public/background.png')]"></div>
+            </PageContentHolder>
+
+            <PageContentHolder href="portfolio-page">somelse</PageContentHolder>
         </main>
     );
 }
+
+export default HomePage;
