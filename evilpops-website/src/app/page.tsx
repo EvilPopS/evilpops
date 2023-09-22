@@ -1,10 +1,11 @@
 import PageContentHolder from "@/components/PageContentHolder";
+import WelcomePageContent from "@/components/WelcomePageContent";
 
 function HomePage() {
     return (
         <main>
             <PageContentHolder href="welcome-page">
-                <div className="bg-slate-500 h-full bg-[url('../../public/background.png')]"></div>
+                <WelcomePageContent />
             </PageContentHolder>
 
             <PageContentHolder href="portfolio-page">somelse</PageContentHolder>

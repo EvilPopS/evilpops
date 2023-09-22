@@ -16,17 +16,17 @@ function Navbar() {
                 <div className={styles.hamMenuBarSize}>
                     <div className="cursor-pointer" onClick={toggleNav}>
                         <div
-                            className={`w-10 h-2 bg-cyan-400 mb-1 transform transition-transform duration-300 ${
+                            className={`w-10 h-2 bg-green-600 mb-1 transform transition-transform duration-300 ${
                                 isNavOpen ? "rotate-45 translate-y-3" : ""
                             } ${styles.hamMenuBarBorder}`}
                         ></div>
                         <div
-                            className={`w-10 h-2 bg-cyan-400 mb-1 transform transition-opacity ${
+                            className={`w-10 h-2 bg-green-600 mb-1 transform transition-opacity ${
                                 isNavOpen ? "opacity-0" : ""
                             } ${styles.hamMenuBarBorder}`}
                         ></div>
                         <div
-                            className={`w-10 h-2 bg-cyan-400 transform transition-transform duration-300 ${
+                            className={`w-10 h-2 bg-green-600 transform transition-transform duration-300 ${
                                 isNavOpen ? "-rotate-45 -translate-y-3" : ""
                             } ${styles.hamMenuBarBorder}`}
                         ></div>

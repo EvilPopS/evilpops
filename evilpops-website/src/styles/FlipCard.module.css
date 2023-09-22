@@ -1,0 +1,29 @@
+.cardContainer {
+    perspective: 1000px;
+}
+
+.cardInnerLayer {
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.cardContainer:hover .cardInnerLayer {
+    transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.frontSide {
+    color: black;
+    border-radius: 3% 13% 3% 13%;
+}
+
+.backSide {
+    color: black;
+    transform: rotateY(180deg);
+    border-radius: 13% 3% 13% 3%;
+}
