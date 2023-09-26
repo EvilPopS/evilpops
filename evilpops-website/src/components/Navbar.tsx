@@ -48,12 +48,12 @@ function Navbar() {
                     <li
                         className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
                     >
-                        <a href="#welcome-page">Welcome page</a>
+                        <a href="#welcome-section">Welcome page</a>
                     </li>
                     <li
                         className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
                     >
-                        <a href="#portfolio-page">Thing two</a>
+                        <a href="#portfolio-section">Thing two</a>
                     </li>
                 </ul>
             </div>

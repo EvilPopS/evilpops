@@ -10,16 +10,16 @@ function FlipCard({
 }) {
     return (
         <div
-            className={`${styles.cardContainer} relative bg-transparent w-80 h-52`}
+            className={`${styles.cardContainer} relative bg-transparent w-full h-full`}
         >
             <div className={`${styles.cardInnerLayer}  w-full h-full`}>
                 <div
-                    className={`${styles.frontSide} absolute w-full h-full p-3 bg-white font-serif`}
+                    className={`${styles.frontSide} absolute w-full h-full bg-white font-serif overflow-hidden`}
                 >
                     {frontSide}
                 </div>
                 <div
-                    className={`${styles.backSide}  w-full h-full p-3 bg-white font-serif`}
+                    className={`${styles.backSide}  w-full h-full bg-white font-serif overflow-hidden`}
                 >
                     {backSide}
                 </div>
