@@ -13,26 +13,24 @@ function CVCardFront() {
 
 function CVCardBack() {
     return (
-        <a href="#portfolio-section">
-            <div className={`p-3 h-full ${styl.contentCont}`}>
-                <div className={`h-1/2`}>
-                    <div
-                        className={`${styl.movingText} mb-3 text-2xl font-extrabold`}
-                    >
-                        Who am I?
-                    </div>
-                    <div className={`text-justify text-lg`}>
-                        Wanna know who I am? Dying of curiosity to see what
-                        skills I possess? Then catch that brain! Or you are too
-                        soft to touch that nasty thing...
-                    </div>
+        <div className={`p-3 h-full ${styl.contentCont}`}>
+            <div className={`h-1/2`}>
+                <div
+                    className={`${styl.movingText} mb-3 text-2xl font-extrabold`}
+                >
+                    Who am I?
                 </div>
-
-                <div className={`h-1/2`}>
-                    <PingPongAnimation />
+                <div className={`text-justify text-lg`}>
+                    Wanna know who I am? Dying of curiosity to see what skills I
+                    possess? Then catch that brain! Well, if you are capable of
+                    doing it... You do look a little bit soft...
                 </div>
             </div>
-        </a>
+
+            <div className={`h-1/2`}>
+                <PingPongAnimation />
+            </div>
+        </div>
     );
 }
 

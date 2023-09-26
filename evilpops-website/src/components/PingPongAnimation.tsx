@@ -1,6 +1,11 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import styl from "../styles/PingPongAnimation.module.css";
 
 function PingPongAnimation() {
+    const router = useRouter();
+
     return (
         <div className={`h-full grid grid-cols-12`}>
             <div className={`h-full col-span-1`}>
@@ -12,6 +17,10 @@ function PingPongAnimation() {
                 <img
                     src={`brain.png`}
                     className={`h-12 select-none ${styl.ppBrainAnim}`}
+                    onClick={() => {
+                        router.push("#portfolio-section");
+                        console.log(1234);
+                    }}
                 />
             </div>
             <div className={`h-full col-span-1`}>
