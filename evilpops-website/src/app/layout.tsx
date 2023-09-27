@@ -1,27 +1,23 @@
 import "./globals.css";
-
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Navbar from "../components/Navbar";
-
-const inter = Inter({ subsets: ["latin"] });
+import Navbar from "@/components/Navbar";
+import EvilpopsTxt from "@/components/EvilpopsTxt";
 
 export const metadata: Metadata = {
     title: "EvilPopS",
     description: "Here is information about me and my work!",
 };
 
-export default function RootLayout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <body>
-                <Navbar></Navbar>
+                <Navbar />
+                <EvilpopsTxt />
                 {children}
             </body>
         </html>
     );
 }
+
+export default RootLayout;
