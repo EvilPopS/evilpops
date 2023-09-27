@@ -4,13 +4,11 @@ import WelcomeSectionContent from "@/components/WelcomeSectionContent";
 function HomePage() {
     return (
         <main>
-            <PageContentHolder href="welcome-section">
+            <PageContentHolder href="portfolio-section">
                 <WelcomeSectionContent />
             </PageContentHolder>
 
-            <PageContentHolder href="portfolio-section">
-                somelse
-            </PageContentHolder>
+            <PageContentHolder href="">somelse</PageContentHolder>
         </main>
     );
 }

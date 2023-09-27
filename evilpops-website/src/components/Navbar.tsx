@@ -2,6 +2,13 @@
 
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
+import {
+    portfolioSectionId,
+    mcModsSectionid,
+    contactsSectionid,
+    ytChannelSectionid,
+    otherProjsSectionid,
+} from "@/configuration/config";
 
 function Navbar() {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -32,7 +39,7 @@ function Navbar() {
                         ></div>
                     </div>
                 </div>
-                <div className="text-2xl text-white font-extrabold ml-5">
+                <div className="text-2xl text-white font-extrabold ml-5 select-none">
                     MENU
                 </div>
             </div>
@@ -48,12 +55,12 @@ function Navbar() {
                     <li
                         className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
                     >
-                        <a href="#welcome-section">Welcome page</a>
+                        <a href={portfolioSectionId}>Portfolio</a>
                     </li>
                     <li
                         className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
                     >
-                        <a href="#portfolio-section">Thing two</a>
+                        <a href={mcModsSectionid}>Minecraft mods</a>
                     </li>
                 </ul>
             </div>
