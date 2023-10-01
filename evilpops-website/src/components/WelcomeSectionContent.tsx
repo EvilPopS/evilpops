@@ -29,13 +29,15 @@ function WelcomeSectionContent() {
                             done featured on this website down below.
                             <br />
                             <br />
-                            <div className="text-center">Enjoy!</div>
+                            <span className="block text-center">Enjoy!</span>
                         </p>
                     </div>
                 </div>
                 <div className={`h-full columns-3 px-36 py-24 ${styl.fogAnim}`}>
                     <div className={`h-full flex items-center justify-center`}>
-                        <div
+                        <a
+                            href="https://github.com/EvilPopS"
+                            target="_blank"
                             className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
                         >
                             <img src="/github_logo.png"></img>
@@ -44,13 +46,15 @@ function WelcomeSectionContent() {
                             >
                                 Github
                             </span>
-                        </div>
+                        </a>
                     </div>
                     <div className={`h-full`}>
                         <div
                             className={`h-1/2 flex items-center justify-center`}
                         >
-                            <div
+                            <a
+                                href="https://www.linkedin.com/in/evilpops/"
+                                target="_blank"
                                 className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
                             >
                                 <img src="/linkedin_logo.png"></img>
@@ -59,12 +63,14 @@ function WelcomeSectionContent() {
                                 >
                                     Linkedin
                                 </span>
-                            </div>
+                            </a>
                         </div>
                         <div
                             className={`h-1/2 flex items-center justify-center`}
                         >
-                            <div
+                            <a
+                                href="https://www.youtube.com/@evilpops"
+                                target="_blank"
                                 className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
                             >
                                 <img src="/yt_logo.png"></img>
@@ -73,23 +79,22 @@ function WelcomeSectionContent() {
                                 >
                                     Youtube channel
                                 </span>
-                            </div>
+                            </a>
                         </div>
                     </div>
                     <div className={`h-full`}>
                         <div
                             className={`h-full flex items-center justify-center`}
                         >
-                            <div
+                            <a
+                                target="_blank"
                                 className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
                             >
                                 <img alt="?"></img>
                                 <span
                                     className={`flex justify-center items-center w-full text-red-600 font-extrabold text-2xl mx-2 text-center`}
-                                >
-                                    EMPTY
-                                </span>
-                            </div>
+                                ></span>
+                            </a>
                         </div>
                     </div>
                 </div>
