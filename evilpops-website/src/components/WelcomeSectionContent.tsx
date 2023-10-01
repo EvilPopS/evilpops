@@ -17,17 +17,20 @@ function WelcomeSectionContent() {
                         className={`h-2/3 font-extrabold text-3xl text-slate-300 px-32 py-12 flex justify-center`}
                     >
                         <p className={`text-justify select-none`}>
-                            &emsp;My name is Strahinja Popović.{" "}
-                            <span>EvilPopS</span> would be the alias I use on
-                            every platform. I'm a software engineer who
-                            graduated from Faculty of Technical Sciences in Novi
-                            Sad, <span className={styl.srbClr}>Serbia</span>.
+                            &emsp;Firstly, welcome to my little oasis of
+                            personal work! I'm Strahinja Popović, also known
+                            (not really) as EvilPopS. I'm a software engineer
+                            with a degree from the Faculty of Technical Sciences
+                            in Novi Sad,{" "}
+                            <span className={styl.srbClr}>Serbia</span>.
                             <br />
                             <br />
-                            &emsp;The further down you go the more you will
-                            discover of my work.
+                            &emsp;You can find all sort of projects I've ever
+                            done featured on this website down below.
+                            <br />
+                            <br />
+                            <div className="text-center">Enjoy!</div>
                         </p>
-                        <div></div>
                     </div>
                 </div>
                 <div className={`h-full columns-3 px-36 py-24 ${styl.fogAnim}`}>
