@@ -11,17 +11,11 @@
 }
 
 /* Fog animation */
+.fogMask::before {
+    mask: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
 
 .fogAnim:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    background-image: url("../../public/fog.png");
-    background-size: cover;
-    mask: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     animation: 30s ease-in-out fogMoving infinite;
 }
 

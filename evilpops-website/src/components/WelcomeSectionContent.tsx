@@ -22,7 +22,7 @@ function WelcomeSectionContent() {
                             (not really) as EvilPopS. I'm a software engineer
                             with a degree from the Faculty of Technical Sciences
                             in Novi Sad,{" "}
-                            <span className={styl.srbClr}>Serbia</span>.
+                            <span className={styl.srbClr}>SERBIA</span>.
                             <br />
                             <br />
                             &emsp;You can find all sort of projects I've ever
@@ -33,7 +33,11 @@ function WelcomeSectionContent() {
                         </p>
                     </div>
                 </div>
-                <div className={`h-full columns-3 px-36 py-24 ${styl.fogAnim}`}>
+                <div
+                    className={`h-full columns-3 px-36 py-24 before:bg-[url('/fog.png')] 
+                        before:bg-cover before:absolute before:top-0 before:right-0 before:w-1/2 before:h-full 
+                        ${styl.fogAnim} ${styl.fogMask}`}
+                >
                     <div className={`h-full flex items-center justify-center`}>
                         <a
                             href="https://github.com/EvilPopS"
