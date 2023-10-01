@@ -2,7 +2,7 @@ import React from "react";
 import styl from "../styles/EvilpopsTxt.module.css";
 import { portfolioSectionId } from "@/configuration/config";
 
-function evilpopsTxt() {
+function EvilpopsTxt() {
     return (
         <div className={`fixed top-0 right-5 p-3 z-10 flex`}>
             <a href={portfolioSectionId}>
@@ -16,4 +16,4 @@ function evilpopsTxt() {
     );
 }
 
-export default evilpopsTxt;
+export default EvilpopsTxt;

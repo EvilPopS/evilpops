@@ -1,5 +1,6 @@
 import React from "react";
 import styl from "../styles/WelcomeSectionContent.module.css";
+import BoatCrossingAnimation from "./BoatCrossingAnimation";
 
 function WelcomeSectionContent() {
     return (
@@ -119,6 +120,9 @@ function WelcomeSectionContent() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={`absolute bottom-0 h-1/6 w-full`}>
+                <BoatCrossingAnimation />
             </div>
         </div>
     );

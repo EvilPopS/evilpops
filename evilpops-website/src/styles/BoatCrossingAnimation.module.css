@@ -1,0 +1,122 @@
+.boatAnim {
+    animation: 12s linear boatAnim infinite;
+}
+
+@keyframes boatAnim {
+    from {
+        transform: translateX(-20%);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+
+.waterLineBorder {
+    border-top: 1px solid white;
+}
+
+.mainWLAnim {
+    animation: 8s linear mainWLAnim infinite;
+}
+
+@keyframes mainWLAnim {
+    from,
+    to {
+        width: 8rem;
+        margin-left: -2.5rem;
+    }
+    25%,
+    75% {
+        width: 7rem;
+        margin-left: -1.5rem;
+    }
+
+    50% {
+        width: 9rem;
+        margin-left: -3.5rem;
+    }
+}
+
+.wlAnim1 {
+    animation: 2s linear wlAnim1 infinite;
+}
+
+@keyframes wlAnim1 {
+    10% {
+        margin-top: 0.2rem;
+    }
+    to {
+        transform: translateX(-1100%);
+        opacity: 0;
+    }
+}
+
+.wlAnim2 {
+    animation: 2s linear wlAnim2 infinite;
+}
+
+@keyframes wlAnim2 {
+    25% {
+        margin-top: -0.3rem;
+    }
+    to {
+        transform: translateX(-1100%);
+        opacity: 0;
+    }
+}
+
+.wlAnim3 {
+    animation: 3s linear wlAnim3 infinite;
+}
+
+@keyframes wlAnim3 {
+    40% {
+        margin-top: -0.5rem;
+    }
+    to {
+        transform: translateX(-1100%);
+        opacity: 0;
+    }
+}
+
+.wlAnim4 {
+    animation: 1.5s linear wlAnim4 infinite;
+}
+
+@keyframes wlAnim4 {
+    15% {
+        margin-top: -0.4rem;
+    }
+    to {
+        transform: translateX(-1300%);
+        opacity: 0;
+    }
+}
+
+.wlAnim5 {
+    animation: 4s linear wlAnim5 infinite;
+}
+
+@keyframes wlAnim5 {
+    15% {
+        margin-top: -0.6rem;
+    }
+    to {
+        transform: translateX(-700%);
+        opacity: 0;
+    }
+}
+
+.wlAnim6 {
+    animation: 3.5s linear wlAnim6 infinite;
+}
+
+@keyframes wlAnim6 {
+    15% {
+        margin-top: -0.55rem;
+    }
+    to {
+        transform: translateX(-1000%);
+        opacity: 0;
+    }
+}
