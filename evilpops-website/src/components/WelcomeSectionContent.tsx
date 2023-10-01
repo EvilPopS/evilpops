@@ -10,26 +10,43 @@ function WelcomeSectionContent() {
                         className={`h-1/3 font-extrabold select-none px-32 flex justify-center items-start`}
                     >
                         <p className={`mt-auto text-green-500 text-7xl `}>
-                            Who am I?
+                            <span className={styl.whoTxtAnim}>Who</span>{" "}
+                            <span className={styl.amTxtAnim}>am</span>{" "}
+                            <span className={styl.txtFadeInAnim3Secs}>I?</span>
                         </p>
                     </div>
                     <div
                         className={`h-2/3 font-extrabold text-3xl text-slate-300 px-32 py-12 flex justify-center`}
                     >
                         <p className={`text-justify select-none`}>
-                            &emsp;Firstly, welcome to my little oasis of
-                            personal work! I'm Strahinja Popović, also known
-                            (not really) as EvilPopS. I'm a software engineer
-                            with a degree from the Faculty of Technical Sciences
-                            in Novi Sad,{" "}
-                            <span className={styl.srbClr}>SERBIA</span>.
+                            &emsp;
+                            <span className={styl.txtFadeInAnim3Secs}>
+                                Firstly, welcome to my little oasis of personal
+                                work! I'm Strahinja Popović, also known (not
+                                really) as EvilPopS . I'm a software engineer
+                                with a degree from the Faculty of Technical
+                                Sciences in Novi Sad, <span>Serbia </span>
+                                <img
+                                    src="/srb_flag.png"
+                                    className={`h-8 inline-block`}
+                                />
+                                .
+                            </span>
                             <br />
                             <br />
-                            &emsp;You can find all sort of projects I've ever
-                            done featured on this website down below.
+                            <span className={styl.txtFadeInAnim5Secs}>
+                                &emsp;You can find all sort of projects I've
+                                ever done featured on this website down below.
+                            </span>
                             <br />
                             <br />
-                            <span className="block text-center">Enjoy!</span>
+                            <span className={styl.txtFadeInAnim7Secs}>
+                                <span
+                                    className={`block text-center ${styl.enjoyTxtAnim}`}
+                                >
+                                    Enjoy!
+                                </span>
+                            </span>
                         </p>
                     </div>
                 </div>

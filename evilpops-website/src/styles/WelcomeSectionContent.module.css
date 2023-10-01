@@ -1,4 +1,62 @@
 /* Left col text css */
+.whoTxtAnim {
+    display: inline-block;
+    animation: 1.5s ease-out txtAppearFromLeftAnim 1;
+}
+
+@keyframes txtAppearFromLeftAnim {
+    from {
+        transform: translateX(-300%);
+    }
+    80%,
+    85% {
+        transform: translateX(10%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.amTxtAnim {
+    display: inline-block;
+    animation: 1.5s ease-out txtAppearFromTopAnim 1;
+}
+
+@keyframes txtAppearFromTopAnim {
+    from {
+        transform: translateY(-600%);
+    }
+    80%,
+    85% {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.txtFadeInAnim3Secs {
+    animation: 3s ease-out txtFadeInAnim 1;
+}
+
+.txtFadeInAnim5Secs {
+    animation: 5s ease-out txtFadeInAnim 1;
+}
+
+.txtFadeInAnim7Secs {
+    animation: 7s ease-out txtFadeInAnim 1;
+}
+
+@keyframes txtFadeInAnim {
+    from,
+    10% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .srbClr {
     background: -webkit-linear-gradient(
         rgba(251, 0, 0, 1) 39%,
@@ -8,6 +66,11 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.enjoyTxtAnim:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
 }
 
 /* Fog animation */
@@ -20,8 +83,8 @@
 }
 
 @keyframes fogMoving {
-    0%,
-    100% {
+    from,
+    to {
         background-position: 0 0;
     }
     50% {
@@ -42,13 +105,13 @@
 }
 
 @keyframes levitate {
-    0% {
+    from {
         transform: translateY(1.5rem);
     }
     50% {
         transform: translateY(-1.5rem);
     }
-    100% {
+    to {
         transform: translateY(1.5rem);
     }
 }
