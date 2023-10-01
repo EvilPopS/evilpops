@@ -1,0 +1,60 @@
+/* Left col text css */
+.srbClr {
+    background: -webkit-linear-gradient(
+        rgba(251, 0, 0, 1) 39%,
+        rgba(4, 25, 241, 1) 55%,
+        rgba(255, 255, 255, 1) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Fog animation */
+
+.fogAnim:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-image: url("../../public/fog.png");
+    background-size: cover;
+    mask: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    animation: 30s ease-in-out fogMoving infinite;
+}
+
+@keyframes fogMoving {
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: bottom right;
+    }
+}
+
+/* Right col bubbles css */
+.bubble {
+    border: 1px solid white;
+    border-radius: 3rem;
+    transition: width 1.5s;
+    animation: 3.5s ease-in-out levitate infinite;
+}
+
+.bubble:hover {
+    width: 18rem;
+}
+
+@keyframes levitate {
+    0% {
+        transform: translateY(1.5rem);
+    }
+    50% {
+        transform: translateY(-1.5rem);
+    }
+    100% {
+        transform: translateY(1.5rem);
+    }
+}

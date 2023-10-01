@@ -1,12 +1,6 @@
 import React from "react";
 import styl from "../styles/EvilpopsTxt.module.css";
-import {
-    portfolioSectionId,
-    mcModsSectionid,
-    contactsSectionid,
-    ytChannelSectionid,
-    otherProjsSectionid,
-} from "@/configuration/config";
+import { portfolioSectionId } from "@/configuration/config";
 
 function evilpopsTxt() {
     return (

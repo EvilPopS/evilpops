@@ -3,12 +3,16 @@ import WelcomeSectionContent from "@/components/WelcomeSectionContent";
 
 function HomePage() {
     return (
-        <main>
-            <PageContentHolder href="portfolio">
-                <WelcomeSectionContent />
-            </PageContentHolder>
+        <main className="snap-y snap-mandatory">
+            <div className="snap-start">
+                <PageContentHolder href="portfolio">
+                    <WelcomeSectionContent />
+                </PageContentHolder>
+            </div>
 
-            <PageContentHolder href="">somelse</PageContentHolder>
+            <div className="snap-start">
+                <PageContentHolder href="">somelse</PageContentHolder>
+            </div>
         </main>
     );
 }

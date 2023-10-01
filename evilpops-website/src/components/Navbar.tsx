@@ -23,7 +23,7 @@ function Navbar() {
                 <div className={styles.hamMenuBarSize}>
                     <div className="cursor-pointer" onClick={toggleNav}>
                         <div
-                            className={`w-10 h-2 bg-green-600 mb-1 transform transition-transform duration-300 ${
+                            className={`w-10 h-2 bg-green-500 mb-1 transform transition-transform duration-300 ${
                                 isNavOpen ? "rotate-45 translate-y-3" : ""
                             } ${styles.hamMenuBarBorder}`}
                         ></div>
@@ -33,7 +33,7 @@ function Navbar() {
                             } ${styles.hamMenuBarBorder}`}
                         ></div>
                         <div
-                            className={`w-10 h-2 bg-green-600 transform transition-transform duration-300 ${
+                            className={`w-10 h-2 bg-green-500 transform transition-transform duration-300 ${
                                 isNavOpen ? "-rotate-45 -translate-y-3" : ""
                             } ${styles.hamMenuBarBorder}`}
                         ></div>
