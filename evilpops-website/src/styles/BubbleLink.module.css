@@ -1,0 +1,22 @@
+.bubble {
+    border: 1px solid white;
+    border-radius: 3rem;
+    transition: width 1.5s;
+    animation: 3.5s ease-in-out levitate infinite;
+}
+
+.bubble:hover {
+    width: 18rem;
+}
+
+@keyframes levitate {
+    from {
+        transform: translateY(1.5rem);
+    }
+    50% {
+        transform: translateY(-1.5rem);
+    }
+    to {
+        transform: translateY(1.5rem);
+    }
+}

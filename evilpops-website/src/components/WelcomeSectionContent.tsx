@@ -1,6 +1,7 @@
 import React from "react";
 import styl from "../styles/WelcomeSectionContent.module.css";
 import BoatCrossingAnimation from "./BoatCrossingAnimation";
+import BubbleLink from "./BubbleLink";
 
 function WelcomeSectionContent() {
     return (
@@ -57,66 +58,42 @@ function WelcomeSectionContent() {
                         ${styl.fogAnim} ${styl.fogMask}`}
                 >
                     <div className={`h-full flex items-center justify-center`}>
-                        <a
-                            href="https://github.com/EvilPopS"
-                            target="_blank"
-                            className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
+                        <BubbleLink
+                            link="https://github.com/EvilPopS"
+                            picture="/github_logo.png"
                         >
-                            <img src="/github_logo.png"></img>
-                            <span
-                                className={`flex justify-center items-center w-full text-black font-extrabold text-2xl mx-2`}
-                            >
-                                Github
-                            </span>
-                        </a>
+                            Github
+                        </BubbleLink>
                     </div>
                     <div className={`h-full`}>
                         <div
                             className={`h-1/2 flex items-center justify-center`}
                         >
-                            <a
-                                href="https://www.linkedin.com/in/evilpops/"
-                                target="_blank"
-                                className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
+                            <BubbleLink
+                                link="https://www.linkedin.com/in/evilpops/"
+                                picture="/linkedin_logo.png"
                             >
-                                <img src="/linkedin_logo.png"></img>
-                                <span
-                                    className={`flex justify-center items-center w-full text-sky-600 font-extrabold text-2xl mx-2`}
-                                >
-                                    Linkedin
-                                </span>
-                            </a>
+                                LinkedIn
+                            </BubbleLink>
                         </div>
                         <div
                             className={`h-1/2 flex items-center justify-center`}
                         >
-                            <a
-                                href="https://www.youtube.com/@evilpops"
-                                target="_blank"
-                                className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
+                            <BubbleLink
+                                link="https://www.youtube.com/@evilpops"
+                                picture="/yt_logo.png"
                             >
-                                <img src="/yt_logo.png"></img>
-                                <span
-                                    className={`flex justify-center items-center w-full text-red-600 font-extrabold text-2xl mx-2 text-center`}
-                                >
-                                    Youtube channel
-                                </span>
-                            </a>
+                                Youtube channel
+                            </BubbleLink>
                         </div>
                     </div>
                     <div className={`h-full`}>
                         <div
                             className={`h-full flex items-center justify-center`}
                         >
-                            <a
-                                target="_blank"
-                                className={`w-24 h-24 -mx-52 flex overflow-hidden bg-slate-200 ${styl.bubble}`}
-                            >
-                                <img alt="?"></img>
-                                <span
-                                    className={`flex justify-center items-center w-full text-red-600 font-extrabold text-2xl mx-2 text-center`}
-                                ></span>
-                            </a>
+                            <BubbleLink link="" picture="">
+                                WILL BE CV
+                            </BubbleLink>
                         </div>
                     </div>
                 </div>
