@@ -43,10 +43,12 @@ function WelcomeSectionContent() {
                             <br />
                             <br />
                             <span className={styl.txtFadeInAnim7Secs}>
-                                <span
-                                    className={`block text-center ${styl.enjoyTxtAnim}`}
-                                >
-                                    Enjoy!
+                                <span className={styl.enjoyTxtAnim}>
+                                    <span
+                                        className={`block text-center ${styl.toRotate}`}
+                                    >
+                                        Enjoy!
+                                    </span>
                                 </span>
                             </span>
                         </p>
