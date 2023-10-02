@@ -1,0 +1,16 @@
+.blurMask {
+    mask: linear-gradient(to bottom, black 35%, transparent);
+}
+
+.fadeIn {
+    animation: 2s linear fadeInAnim 1;
+}
+
+@keyframes fadeInAnim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
