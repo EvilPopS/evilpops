@@ -1,0 +1,93 @@
+/* Left col text css */
+.whoTxtAnim {
+    display: inline-block;
+    animation: 1.5s ease-out txtAppearFromLeftAnim 1;
+}
+
+@keyframes txtAppearFromLeftAnim {
+    from {
+        transform: translateX(-300%);
+    }
+    80%,
+    85% {
+        transform: translateX(10%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.amTxtAnim {
+    display: inline-block;
+    animation: 1.5s ease-out txtAppearFromTopAnim 1;
+}
+
+@keyframes txtAppearFromTopAnim {
+    from {
+        transform: translateY(-600%);
+    }
+    80%,
+    85% {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.txtFadeInAnim3Secs {
+    animation: 3s ease-out txtFadeInAnim 1;
+}
+
+.txtFadeInAnim5Secs {
+    animation: 5s ease-out txtFadeInAnim 1;
+}
+
+.txtFadeInAnim7Secs {
+    animation: 7s ease-out txtFadeInAnim 1;
+}
+
+@keyframes txtFadeInAnim {
+    from,
+    10% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.srbClr {
+    background: -webkit-linear-gradient(
+        rgba(251, 0, 0, 1) 39%,
+        rgba(4, 25, 241, 1) 55%,
+        rgba(255, 255, 255, 1) 80%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.enjoyTxtAnim:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+
+/* Fog animation */
+.fogMask::before {
+    mask: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+
+.fogAnim:before {
+    animation: 30s ease-in-out fogMoving infinite;
+}
+
+@keyframes fogMoving {
+    from,
+    to {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: bottom right;
+    }
+}

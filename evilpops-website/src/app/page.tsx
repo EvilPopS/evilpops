@@ -4,7 +4,7 @@ import WelcomeSectionContent from "@/components/WelcomeSectionContent";
 function HomePage() {
     return (
         <main>
-            <PageContentHolder href="portfolio-section">
+            <PageContentHolder href="portfolio">
                 <WelcomeSectionContent />
             </PageContentHolder>
 
