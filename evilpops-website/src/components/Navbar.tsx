@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import {
-    portfolioSectionId,
+    aboutMeSectionid,
     mcModsSectionid,
     contactsSectionid,
     ytChannelSectionid,
@@ -52,16 +52,20 @@ function Navbar() {
                 }`}
             >
                 <ul className="mt-6 pt-5 text-center">
-                    <li
-                        className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
-                    >
-                        <a href={portfolioSectionId}>Portfolio</a>
-                    </li>
-                    <li
-                        className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
-                    >
-                        <a href={mcModsSectionid}>Minecraft mods</a>
-                    </li>
+                    <a href={aboutMeSectionid}>
+                        <li
+                            className={`pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
+                        >
+                            About me
+                        </li>
+                    </a>
+                    <a href={mcModsSectionid}>
+                        <li
+                            className={`pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
+                        >
+                            Minecraft mods
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
