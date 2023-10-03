@@ -35,6 +35,21 @@
     }
 }
 
+.IQMTxtAnim {
+    display: inline-block;
+    animation: 3s ease-out txtSpinsFast 1;
+}
+
+@keyframes txtSpinsFast {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: rotateY(2160deg);
+    }
+}
+
 .txtFadeInAnim3Secs {
     animation: 3s ease-out txtFadeInAnim 1;
 }
@@ -68,9 +83,9 @@
     -webkit-text-fill-color: transparent;
 }
 
-.enjoyTxtAnim:hover {
-    transform: rotateY(360deg);
+.enjoyTxtAnim:hover > .toRotate {
     transition: 1s;
+    transform: rotateY(360deg);
 }
 
 /* Fog animation */

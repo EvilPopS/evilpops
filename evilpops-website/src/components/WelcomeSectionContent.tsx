@@ -14,7 +14,7 @@ function WelcomeSectionContent() {
                         <p className={`mt-auto text-green-500 text-7xl `}>
                             <span className={styl.whoTxtAnim}>Who</span>{" "}
                             <span className={styl.amTxtAnim}>am</span>{" "}
-                            <span className={styl.txtFadeInAnim3Secs}>I?</span>
+                            <span className={styl.IQMTxtAnim}>I?</span>
                         </p>
                     </div>
                     <div
@@ -43,10 +43,12 @@ function WelcomeSectionContent() {
                             <br />
                             <br />
                             <span className={styl.txtFadeInAnim7Secs}>
-                                <span
-                                    className={`block text-center ${styl.enjoyTxtAnim}`}
-                                >
-                                    Enjoy!
+                                <span className={styl.enjoyTxtAnim}>
+                                    <span
+                                        className={`block text-center ${styl.toRotate}`}
+                                    >
+                                        Enjoy!
+                                    </span>
                                 </span>
                             </span>
                         </p>
