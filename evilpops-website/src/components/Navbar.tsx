@@ -19,7 +19,7 @@ function Navbar() {
 
     return (
         <div>
-            <div className={`fixed top-0 left-0 p-4 z-10 flex w-1/12`}>
+            <div className={`fixed top-0 left-0 p-4 z-30 flex w-1/12`}>
                 <div className={styles.hamMenuBarSize}>
                     <div className="cursor-pointer" onClick={toggleNav}>
                         <div
@@ -39,13 +39,13 @@ function Navbar() {
                         ></div>
                     </div>
                 </div>
-                <div className="text-2xl text-white font-extrabold ml-5 select-none">
+                <div className="text-2xl text-white font-extrabold ml-5 select-none z-30">
                     MENU
                 </div>
             </div>
 
             <div
-                className={`fixed top-0 left-0 h-screen pt-10 bg-gray-800 text-white transform transition-transform duration-300 ${
+                className={`fixed top-0 left-0 h-screen pt-10 bg-gray-800 text-white transform transition-transform duration-300 z-20 ${
                     styles.panelBorder
                 } ${styles.panelWidth} ${
                     isNavOpen ? "translate-x-0" : "-translate-x-full"
