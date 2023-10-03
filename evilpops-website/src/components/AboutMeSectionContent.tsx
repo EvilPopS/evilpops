@@ -1,9 +1,9 @@
 import React from "react";
-import styl from "../styles/WelcomeSectionContent.module.css";
+import styl from "../styles/AboutMeSectionContent.module.css";
 import BoatCrossingAnimation from "./BoatCrossingAnimation";
 import BubbleLink from "./BubbleLink";
 
-function WelcomeSectionContent() {
+function AboutMeSectionContent() {
     return (
         <div className={`h-full bg-gray-950 bg-blend-soft-light`}>
             <div className={`h-full columns-2`}>
@@ -107,4 +107,4 @@ function WelcomeSectionContent() {
     );
 }
 
-export default WelcomeSectionContent;
+export default AboutMeSectionContent;
