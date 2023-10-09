@@ -21,13 +21,13 @@ function AboutMeSectionContent() {
                         className={`h-2/3 font-extrabold text-3xl text-slate-300 px-32 py-12 flex justify-center`}
                     >
                         <p className={`text-justify select-none`}>
-                            &emsp;
                             <span className={styl.txtFadeInAnim3Secs}>
-                                Firstly, welcome to my little oasis of personal
-                                work! I'm Strahinja Popović, also known (not
-                                really) as EvilPopS. I'm a software engineer
-                                with a degree from the Faculty of Technical
-                                Sciences in Novi Sad, <span>Serbia </span>
+                                &emsp;Firstly, welcome to my little oasis of
+                                personal work! I'm Strahinja Popović, also known
+                                (not really) as EvilPopS. I'm a software
+                                engineer with a degree from the Faculty of
+                                Technical Sciences in Novi Sad,{" "}
+                                <span>Serbia </span>
                                 <img
                                     src="/srb_flag.png"
                                     className={`h-8 inline-block`}
