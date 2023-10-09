@@ -5,7 +5,7 @@ import BubbleLink from "./BubbleLink";
 
 function AboutMeSectionContent() {
     return (
-        <div className={`h-full bg-gray-950 bg-blend-soft-light`}>
+        <div className={`h-full bg-gray-950`}>
             <div className={`h-full columns-2`}>
                 <div className={`h-full`}>
                     <div
@@ -25,7 +25,7 @@ function AboutMeSectionContent() {
                             <span className={styl.txtFadeInAnim3Secs}>
                                 Firstly, welcome to my little oasis of personal
                                 work! I'm Strahinja Popović, also known (not
-                                really) as EvilPopS . I'm a software engineer
+                                really) as EvilPopS. I'm a software engineer
                                 with a degree from the Faculty of Technical
                                 Sciences in Novi Sad, <span>Serbia </span>
                                 <img

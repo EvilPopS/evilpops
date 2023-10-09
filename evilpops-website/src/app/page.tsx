@@ -1,5 +1,6 @@
 import PageContentHolder from "@/components/PageContentHolder";
 import AboutMeSectionContent from "@/components/AboutMeSectionContent";
+import MCModsSectionContent from "@/components/MCModsSectionContent";
 
 function HomePage() {
     return (
@@ -9,7 +10,7 @@ function HomePage() {
             </PageContentHolder>
 
             <PageContentHolder href="mc-mods">
-                <></>
+                <MCModsSectionContent />
             </PageContentHolder>
         </main>
     );

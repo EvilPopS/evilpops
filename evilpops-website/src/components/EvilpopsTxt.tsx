@@ -1,11 +1,11 @@
 import React from "react";
 import styl from "../styles/EvilpopsTxt.module.css";
-import { portfolioSectionId } from "@/configuration/config";
+import { aboutMeSectionid } from "@/configuration/config";
 
 function EvilpopsTxt() {
     return (
         <div className={`fixed top-0 right-5 p-3 z-10 flex`}>
-            <a href={portfolioSectionId}>
+            <a href={aboutMeSectionid}>
                 <span
                     className={`select-none text-4xl font-extrabold animate-pulse ${styl.evilpopsTxtFont}`}
                 >
