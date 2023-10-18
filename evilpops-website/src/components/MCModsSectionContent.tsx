@@ -1,11 +1,14 @@
 import React from "react";
 import styl from "../styles/MCModsSectionContent.module.css";
+import MCModsContainer from "./MCModsContainer";
 
 function MCModsSectionContent() {
     return (
         <div className={`h-full bg-gray-950 bg-cover`}>
             <div className={`h-full columns-2`}>
-                <div className={`h-full`}></div>
+                <div className={`h-full`}>
+                    <MCModsContainer />
+                </div>
                 <div className={`h-full`}>
                     <div
                         className={`h-1/3 font-extrabold select-none px-32 flex justify-center items-start`}
@@ -32,7 +35,7 @@ function MCModsSectionContent() {
                             <br />
                             <br />
                             <span className={`text-center block`}>
-                                Yeess, everything is free, I'm a good
+                                Yeess, everything is free! I'm a good
                                 soul.&#128516;
                             </span>
                         </p>
