@@ -39,7 +39,7 @@ function Navbar() {
                         ></div>
                     </div>
                 </div>
-                <div className="text-2xl text-white font-extrabold ml-5 select-none z-30">
+                <div className="text-2xl text-white font-extrabold ml-5 z-30">
                     MENU
                 </div>
             </div>

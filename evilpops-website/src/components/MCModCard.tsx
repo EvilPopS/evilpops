@@ -10,7 +10,7 @@ interface CardProps {
 function MCModCard(props: CardProps) {
     return (
         <div
-            className={`w-[20rem] h-[35rem] bg-amber-950 overflow-hidden mx-[2rem] ${styl.cardStyle}`}
+            className={`w-[20rem] h-[35rem] bg-slate-800 overflow-hidden mx-[2rem] ${styl.cardStyle}`}
         >
             <div
                 className={`h-3/5 bg-cover ${props.imgBg} ${styl.imgFadeOut}`}

@@ -9,7 +9,7 @@ function AboutMeSectionContent() {
             <div className={`h-full columns-2`}>
                 <div className={`h-full`}>
                     <div
-                        className={`h-1/3 font-extrabold select-none px-32 flex justify-center items-start`}
+                        className={`h-1/3 font-extrabold px-32 flex justify-center items-start`}
                     >
                         <p className={`mt-auto text-green-500 text-7xl `}>
                             <span className={styl.whoTxtAnim}>Who</span>{" "}
@@ -20,7 +20,7 @@ function AboutMeSectionContent() {
                     <div
                         className={`h-2/3 font-extrabold text-3xl text-slate-300 px-32 py-12 flex justify-center`}
                     >
-                        <p className={`text-justify select-none`}>
+                        <p className={`text-justify`}>
                             <span className={styl.txtFadeInAnim3Secs}>
                                 &emsp;Firstly, welcome to my little oasis of
                                 personal work! I'm Strahinja Popović, also known

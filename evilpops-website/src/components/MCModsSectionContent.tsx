@@ -11,7 +11,7 @@ function MCModsSectionContent() {
                 </div>
                 <div className={`h-full`}>
                     <div
-                        className={`h-1/3 font-extrabold select-none px-32 flex justify-center items-start`}
+                        className={`h-1/3 font-extrabold px-32 flex justify-center items-start`}
                     >
                         <p
                             className={`mt-auto text-7xl ${styl.aboutSectionTitleStyle}`}
@@ -22,7 +22,7 @@ function MCModsSectionContent() {
                     <div
                         className={`h-2/3 font-extrabold text-3xl text-slate-300 px-32 py-12 flex justify-center`}
                     >
-                        <p className={`text-justify select-none`}>
+                        <p className={`text-justify`}>
                             &emsp;In this section you can browse Minecraft mods
                             I've made. Every card is one mod and contains the
                             basic information about it.
