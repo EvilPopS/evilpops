@@ -23,8 +23,8 @@ function MCModsContainer() {
     const changeContPos = () => {
         const cardCont = document.getElementById("cards-cont");
         if (cardCont)
-            cardCont.style.transform = `translateX(calc(50% - 12rem + ${
-                currCardInd * -22
+            cardCont.style.transform = `translateX(calc(50% - 12rem - ${
+                currCardInd * 24
             }rem))`;
     };
 
