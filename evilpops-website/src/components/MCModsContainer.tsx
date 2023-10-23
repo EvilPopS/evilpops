@@ -37,11 +37,11 @@ function MCModsContainer() {
             </div>
 
             <div
-                className={`h-full w-4/6 flex justify-center items-center overflow-hidden`}
+                className={`h-full w-4/6 flex justify-center items-center overflow-hidden ${styl.contFade} `}
             >
                 <div
                     id="cards-cont"
-                    className={`h-full w-screen flex flex-nowrap justify-center items-center ${styl.noScroll} ${styl.initPosition}`}
+                    className={`h-full flex flex-nowrap justify-center items-center ${styl.noScroll} ${styl.initPosition}`}
                 >
                     <MCModCard
                         href="doesnt-matter"

@@ -12,3 +12,13 @@
     transform: translateX(calc(50% - 12rem));
     transition: 1s;
 }
+
+.contFade {
+    mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+}
