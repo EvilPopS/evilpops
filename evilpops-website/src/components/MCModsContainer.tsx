@@ -45,19 +45,19 @@ function MCModsContainer() {
                     className={`h-full flex flex-nowrap justify-center items-center ${styl.noScroll} ${styl.initPosition}`}
                 >
                     <MCModCard
-                        href="doesnt-matter"
-                        imgBg="bg-[url('/temp-mc-pic.png')]"
-                        title="Some Mode Name"
+                        href="under-construction"
+                        imgBg="bg-[url('/under-construction.png')]"
+                        title="COMING SOON"
                     >
-                        Some mod desc goes here
+                        This mod is in process of being made! Be patient my
+                        friend :)
                     </MCModCard>
                     <MCModCard
-                        href="doesnt-matter"
-                        imgBg="bg-[url('/temp-mc-pic.png')]"
-                        title="YET TO COME"
+                        href="under-construction"
+                        imgBg="bg-[url('/under-construction.png')]"
+                        title="COMING SOON"
                     >
-                        The mod is in construction, or maybe not, no one
-                        knows...
+                        This one is not even started lol
                     </MCModCard>
                 </div>
             </div>
