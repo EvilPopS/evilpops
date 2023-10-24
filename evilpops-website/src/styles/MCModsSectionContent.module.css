@@ -1,0 +1,6 @@
+.aboutSectionTitleStyle {
+    background: -webkit-linear-gradient(90deg, #4d2b04 50%, #0bda2d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

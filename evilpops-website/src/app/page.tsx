@@ -1,14 +1,17 @@
 import PageContentHolder from "@/components/PageContentHolder";
-import WelcomeSectionContent from "@/components/WelcomeSectionContent";
+import AboutMeSectionContent from "@/components/AboutMeSectionContent";
+import MCModsSectionContent from "@/components/MCModsSectionContent";
 
 function HomePage() {
     return (
         <main>
-            <PageContentHolder href="portfolio">
-                <WelcomeSectionContent />
+            <PageContentHolder href="about-me">
+                <AboutMeSectionContent />
             </PageContentHolder>
 
-            <PageContentHolder href="">somelse</PageContentHolder>
+            <PageContentHolder href="mc-mods">
+                <MCModsSectionContent />
+            </PageContentHolder>
         </main>
     );
 }

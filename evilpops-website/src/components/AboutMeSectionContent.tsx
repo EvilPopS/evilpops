@@ -1,15 +1,15 @@
 import React from "react";
-import styl from "../styles/WelcomeSectionContent.module.css";
+import styl from "../styles/AboutMeSectionContent.module.css";
 import BoatCrossingAnimation from "./BoatCrossingAnimation";
 import BubbleLink from "./BubbleLink";
 
-function WelcomeSectionContent() {
+function AboutMeSectionContent() {
     return (
-        <div className={`h-full bg-gray-950 bg-blend-soft-light`}>
+        <div className={`h-full bg-gray-950 relative`}>
             <div className={`h-full columns-2`}>
                 <div className={`h-full`}>
                     <div
-                        className={`h-1/3 font-extrabold select-none px-32 flex justify-center items-start`}
+                        className={`h-1/3 font-extrabold px-32 flex justify-center items-start`}
                     >
                         <p className={`mt-auto text-green-500 text-7xl `}>
                             <span className={styl.whoTxtAnim}>Who</span>{" "}
@@ -20,14 +20,14 @@ function WelcomeSectionContent() {
                     <div
                         className={`h-2/3 font-extrabold text-3xl text-slate-300 px-32 py-12 flex justify-center`}
                     >
-                        <p className={`text-justify select-none`}>
-                            &emsp;
+                        <p className={`text-justify`}>
                             <span className={styl.txtFadeInAnim3Secs}>
-                                Firstly, welcome to my little oasis of personal
-                                work! I'm Strahinja Popović, also known (not
-                                really) as EvilPopS . I'm a software engineer
-                                with a degree from the Faculty of Technical
-                                Sciences in Novi Sad, <span>Serbia </span>
+                                &emsp;Firstly, welcome to my little oasis of
+                                personal work! I'm Strahinja Popović, also known
+                                (not really) as EvilPopS. I'm a software
+                                engineer with a degree from the Faculty of
+                                Technical Sciences in Novi Sad,{" "}
+                                <span>Serbia </span>
                                 <img
                                     src="/srb_flag.png"
                                     className={`h-8 inline-block`}
@@ -107,4 +107,4 @@ function WelcomeSectionContent() {
     );
 }
 
-export default WelcomeSectionContent;
+export default AboutMeSectionContent;

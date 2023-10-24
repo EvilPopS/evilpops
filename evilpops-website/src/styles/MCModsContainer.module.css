@@ -1,0 +1,24 @@
+.noScroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+}
+
+.noSCroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.initPosition {
+    /* 10rem is the half of the width of MCModCard */
+    transform: translateX(calc(50% - 12rem));
+    transition: 1s;
+}
+
+.contFade {
+    mask-image: linear-gradient(
+        to left,
+        transparent 0%,
+        black 15%,
+        black 85%,
+        transparent 100%
+    );
+}

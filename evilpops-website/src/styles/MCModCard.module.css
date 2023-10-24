@@ -1,0 +1,8 @@
+.cardStyle {
+    border-radius: 10px 40px 10px 40px;
+    border: 1px solid white;
+}
+
+.imgFadeOut {
+    mask: linear-gradient(to bottom, black 35%, transparent);
+}

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import {
-    portfolioSectionId,
+    aboutMeSectionid,
     mcModsSectionid,
     contactsSectionid,
     ytChannelSectionid,
@@ -19,7 +19,7 @@ function Navbar() {
 
     return (
         <div>
-            <div className={`fixed top-0 left-0 p-4 z-10 flex w-1/12`}>
+            <div className={`fixed top-0 left-0 p-4 z-30 flex w-1/12`}>
                 <div className={styles.hamMenuBarSize}>
                     <div className="cursor-pointer" onClick={toggleNav}>
                         <div
@@ -39,29 +39,33 @@ function Navbar() {
                         ></div>
                     </div>
                 </div>
-                <div className="text-2xl text-white font-extrabold ml-5 select-none">
+                <div className="text-2xl text-white font-extrabold ml-5 z-30">
                     MENU
                 </div>
             </div>
 
             <div
-                className={`fixed top-0 left-0 h-screen pt-10 bg-gray-800 text-white transform transition-transform duration-300 ${
+                className={`fixed top-0 left-0 h-screen pt-10 bg-gray-800 text-white transform transition-transform duration-300 z-20 ${
                     styles.panelBorder
                 } ${styles.panelWidth} ${
                     isNavOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
             >
                 <ul className="mt-6 pt-5 text-center">
-                    <li
-                        className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
-                    >
-                        <a href={portfolioSectionId}>Portfolio</a>
-                    </li>
-                    <li
-                        className={`mb-5 pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
-                    >
-                        <a href={mcModsSectionid}>Minecraft mods</a>
-                    </li>
+                    <a href={aboutMeSectionid}>
+                        <li
+                            className={`pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
+                        >
+                            About me
+                        </li>
+                    </a>
+                    <a href={mcModsSectionid}>
+                        <li
+                            className={`pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
+                        >
+                            Minecraft mods
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
