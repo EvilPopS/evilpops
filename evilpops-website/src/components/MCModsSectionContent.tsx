@@ -1,6 +1,7 @@
 import React from "react";
 import styl from "../styles/MCModsSectionContent.module.css";
 import MCModsContainer from "./MCModsContainer";
+import BoatCrossingAnimation from "./BoatCrossingAnimation";
 
 function MCModsSectionContent() {
     return (

@@ -31,9 +31,10 @@ function MCModsContainer() {
     return (
         <div className={`h-full w-full flex px-16`}>
             <div className={`h-full w-1/6 flex justify-center items-center`}>
-                <div className={`w-10 h-10`}>
-                    <img src="/left_arrow_btn.png" onClick={leftArrowClick} />
-                </div>
+                <div
+                    className={`w-10 h-16 cursor-pointer bg-[url('/left_arrow_btn.png')] bg-cover hover:bg-[url('/left_arrow_btn_hover.png')] `}
+                    onClick={leftArrowClick}
+                ></div>
             </div>
 
             <div
@@ -62,9 +63,10 @@ function MCModsContainer() {
             </div>
 
             <div className={`h-full flex w-1/6 justify-center items-center`}>
-                <div className={`w-10 h-10`}>
-                    <img src="/right_arrow_btn.png" onClick={rightArrowClick} />
-                </div>
+                <div
+                    className={`w-10 h-16 cursor-pointer bg-[url('/right_arrow_btn.png')] bg-cover hover:bg-[url('/right_arrow_btn_hover.png')]`}
+                    onClick={rightArrowClick}
+                ></div>
             </div>
         </div>
     );
