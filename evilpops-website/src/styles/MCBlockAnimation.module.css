@@ -1,0 +1,36 @@
+.blockMoveAnim {
+    animation: 10s linear blockMoveAnim infinite;
+}
+
+@keyframes blockMoveAnim {
+    from {
+        transform: translateX(-20%);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+
+.blockJumpAnim {
+    animation: 1s ease-in-out blockJumpAnim infinite;
+}
+
+@keyframes blockJumpAnim {
+    10%,
+    80% {
+        transform: translateY(0%);
+    }
+    40% {
+        transform: translateY(-70%);
+    }
+}
+
+.blockRotateAnim {
+    animation: 3.33s linear blockRotateAnim infinite;
+}
+
+@keyframes blockRotateAnim {
+    to {
+        transform: rotate(1440deg);
+    }
+}

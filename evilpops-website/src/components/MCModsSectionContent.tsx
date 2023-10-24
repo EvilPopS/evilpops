@@ -1,11 +1,11 @@
 import React from "react";
 import styl from "../styles/MCModsSectionContent.module.css";
 import MCModsContainer from "./MCModsContainer";
-import BoatCrossingAnimation from "./BoatCrossingAnimation";
+import MCBlockAnimation from "./MCBlockAnimation";
 
 function MCModsSectionContent() {
     return (
-        <div className={`h-full bg-gray-950 bg-cover`}>
+        <div className={`h-full bg-gray-950 relative`}>
             <div className={`h-full columns-2`}>
                 <div className={`h-full`}>
                     <MCModsContainer />
@@ -42,6 +42,9 @@ function MCModsSectionContent() {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="h-[10%] absolute w-full bottom-0 flex justify-center">
+                <MCBlockAnimation />
             </div>
         </div>
     );

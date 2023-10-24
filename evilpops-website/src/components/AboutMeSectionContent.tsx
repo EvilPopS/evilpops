@@ -5,7 +5,7 @@ import BubbleLink from "./BubbleLink";
 
 function AboutMeSectionContent() {
     return (
-        <div className={`h-full bg-gray-950`}>
+        <div className={`h-full bg-gray-950 relative`}>
             <div className={`h-full columns-2`}>
                 <div className={`h-full`}>
                     <div

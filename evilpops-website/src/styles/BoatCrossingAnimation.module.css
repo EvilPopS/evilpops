@@ -15,6 +15,7 @@
     border-top: 1px solid white;
 }
 
+/* Water line animations */
 .mainWLAnim {
     animation: 8s linear mainWLAnim infinite;
 }
