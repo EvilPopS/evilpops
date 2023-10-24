@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styl from "../styles/MCModsContainer.module.css";
 import MCModCard from "./MCModCard";
+import { MAX_MC_MOD_CARD_IND } from "@/configuration/config";
 
 function MCModsContainer() {
-    const MAX_CARDS = 2;
     let currCardInd = 0;
 
     const leftArrowClick = () => {
@@ -15,7 +15,7 @@ function MCModsContainer() {
     };
 
     const rightArrowClick = () => {
-        if (currCardInd == MAX_CARDS) return;
+        if (currCardInd == MAX_MC_MOD_CARD_IND) return;
         currCardInd++;
         changeContPos();
     };
@@ -46,26 +46,17 @@ function MCModsContainer() {
                     <MCModCard
                         href="doesnt-matter"
                         imgBg="bg-[url('/temp-mc-pic.png')]"
+                        title="Some Mode Name"
                     >
-                        Some text goes here and I need a bunch of it so I can
-                        style it properly so I am bullshitting right now don't
-                        mind what is written
+                        Some mod desc goes here
                     </MCModCard>
                     <MCModCard
                         href="doesnt-matter"
                         imgBg="bg-[url('/temp-mc-pic.png')]"
+                        title="YET TO COME"
                     >
-                        Some text goes here and I need a bunch of it so I can
-                        style it properly so I am bullshitting right now don't
-                        mind what is written
-                    </MCModCard>
-                    <MCModCard
-                        href="doesnt-matter"
-                        imgBg="bg-[url('/temp-mc-pic.png')]"
-                    >
-                        Some text goes here and I need a bunch of it so I can
-                        style it properly so I am bullshitting right now don't
-                        mind what is written
+                        The mod is in construction, or maybe not, no one
+                        knows...
                     </MCModCard>
                 </div>
             </div>
