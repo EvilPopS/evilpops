@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "../styles/OtherProjectsSectionContent.module.css";
+import styl from "@/styles/OtherProjectsSectionContent.module.css";
 import ProjectCard from "./ProjectCard";
 import ProjectsContainer from "./ProjectsContainer";
 import { cardsInfo } from "@/configuration/otherProjCardsInformation";
@@ -42,6 +42,7 @@ function OtherProjectsSectionContent() {
                     >
                         {cardsInfo.map((cInfo) => (
                             <ProjectCard
+                                key={cInfo.id}
                                 href={cInfo.href}
                                 imgBg={cInfo.imgBg}
                                 title={cInfo.title}

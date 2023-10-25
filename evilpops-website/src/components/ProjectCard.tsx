@@ -8,7 +8,12 @@ function ProjectCard(props: ProjCardProps) {
             className={`w-[20rem] h-[40rem] bg-slate-800 overflow-hidden mx-[2rem] ${styl.cardStyle}`}
         >
             <div
-                className={`h-2/5 bg-cover ${props.imgBg} ${styl.imgFadeOut}`}
+                style={
+                    {
+                        "--image-url": `url(${props.imgBg})`,
+                    } as React.CSSProperties
+                }
+                className={`h-2/5 bg-cover bg-[image:var(--image-url)] ${styl.imgFadeOut}`}
             ></div>
             <div className={`h-3/5`}>
                 <div className={`h-3/4 px-6`}>

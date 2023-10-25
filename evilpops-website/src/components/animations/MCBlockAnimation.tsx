@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "../styles/MCBlockAnimation.module.css";
+import styl from "@/styles/animations/MCBlockAnimation.module.css";
 
 function MCBlockAnimation() {
     return (

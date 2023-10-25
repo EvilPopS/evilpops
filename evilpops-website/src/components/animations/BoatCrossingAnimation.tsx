@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "../styles/BoatCrossingAnimation.module.css";
+import styl from "@/styles/animations/BoatCrossingAnimation.module.css";
 
 function BoatCrossingAnimation() {
     return (

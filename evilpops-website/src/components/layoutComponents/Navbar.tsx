@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import styles from "../styles/Navbar.module.css";
+import styles from "@/styles/layoutComponentsCSS/Navbar.module.css";
 import {
     aboutMeSectionid,
     mcModsSectionid,

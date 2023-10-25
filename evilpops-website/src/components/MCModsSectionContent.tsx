@@ -1,7 +1,7 @@
 import React from "react";
 import styl from "../styles/MCModsSectionContent.module.css";
 import ProjectsContainer from "./ProjectsContainer";
-import MCBlockAnimation from "./MCBlockAnimation";
+import MCBlockAnimation from "./animations/MCBlockAnimation";
 import ProjectCard from "./ProjectCard";
 import { cardsInfo } from "@/configuration/mcModCardsInformation";
 
@@ -16,6 +16,7 @@ function MCModsSectionContent() {
                     >
                         {cardsInfo.map((cInfo) => (
                             <ProjectCard
+                                key={cInfo.id}
                                 href={cInfo.href}
                                 imgBg={cInfo.imgBg}
                                 title={cInfo.title}

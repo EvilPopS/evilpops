@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import Navbar from "@/components/Navbar";
-import EvilpopsTxt from "@/components/EvilpopsTxt";
+import Navbar from "@/components/layoutComponents/Navbar";
+import EvilpopsTxt from "@/components/layoutComponents/EvilpopsTxt";
 import TopOfScreenBlur from "@/components/TopOfScreenBlur";
 
 export const metadata: Metadata = {

@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "../styles/EvilpopsTxt.module.css";
+import styl from "@/styles/layoutComponentsCSS/EvilpopsTxt.module.css";
 import { aboutMeSectionid } from "@/configuration/config";
 
 function EvilpopsTxt() {
