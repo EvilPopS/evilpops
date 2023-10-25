@@ -1,5 +1,7 @@
 import React from "react";
 import styl from "../styles/OtherProjectsSectionContent.module.css";
+import ProjectCard from "./ProjectCard";
+import ProjectsContainer from "./ProjectsContainer";
 
 function OtherProjectsSectionContent() {
     return (
@@ -26,11 +28,33 @@ function OtherProjectsSectionContent() {
                             dedicated for all the information about the project.
                             <br />
                             <br />
-                            <div className={`text-center`}>&#128516;</div>
+                            <span className={`block text-center`}>
+                                &#128516;
+                            </span>
                         </p>
                     </div>
                 </div>
-                <div className={`h-full`}></div>
+                <div className={`h-full`}>
+                    <ProjectsContainer
+                        maxCardInd={1}
+                        containerName="other-projs-cards-cont"
+                    >
+                        <ProjectCard
+                            href="under-construction"
+                            imgBg="bg-[url('/under-construction.png')]"
+                            title="COMING SOON"
+                        >
+                            Card is under construction!!
+                        </ProjectCard>
+                        <ProjectCard
+                            href="under-construction"
+                            imgBg="bg-[url('/under-construction.png')]"
+                            title="COMING SOON"
+                        >
+                            This one is not even started lol
+                        </ProjectCard>
+                    </ProjectsContainer>
+                </div>
             </div>
         </div>
     );

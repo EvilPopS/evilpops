@@ -8,7 +8,7 @@ interface CardProps {
     title: string;
 }
 
-function MCModCard(props: CardProps) {
+function ProjectCard(props: CardProps) {
     return (
         <div
             className={`w-[20rem] h-[40rem] bg-slate-800 overflow-hidden mx-[2rem] ${styl.cardStyle}`}
@@ -40,4 +40,4 @@ function MCModCard(props: CardProps) {
     );
 }
 
-export default MCModCard;
+export default ProjectCard;

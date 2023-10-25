@@ -2,10 +2,14 @@
 
 import React from "react";
 import styl from "../styles/MCModsContainer.module.css";
-import MCModCard from "./MCModCard";
-import { MAX_MC_MOD_CARD_IND } from "@/configuration/config";
 
-function MCModsContainer() {
+interface PCProps {
+    children: React.ReactNode;
+    maxCardInd: number;
+    containerName: string;
+}
+
+function ProjectsContainer(props: PCProps) {
     let currCardInd = 0;
 
     const leftArrowClick = () => {
@@ -15,13 +19,13 @@ function MCModsContainer() {
     };
 
     const rightArrowClick = () => {
-        if (currCardInd == MAX_MC_MOD_CARD_IND) return;
+        if (currCardInd == props.maxCardInd) return;
         currCardInd++;
         changeContPos();
     };
 
     const changeContPos = () => {
-        const cardCont = document.getElementById("cards-cont");
+        const cardCont = document.getElementById(props.containerName);
         if (cardCont)
             cardCont.style.transform = `translateX(calc(50% - 12rem - ${
                 currCardInd * 24
@@ -41,24 +45,10 @@ function MCModsContainer() {
                 className={`h-full w-4/6 flex justify-center items-center overflow-hidden ${styl.contFade} `}
             >
                 <div
-                    id="cards-cont"
+                    id={props.containerName}
                     className={`h-full flex flex-nowrap justify-center items-center ${styl.noScroll} ${styl.initPosition}`}
                 >
-                    <MCModCard
-                        href="under-construction"
-                        imgBg="bg-[url('/under-construction.png')]"
-                        title="COMING SOON"
-                    >
-                        This mod is in process of being made! Be patient my
-                        friend :)
-                    </MCModCard>
-                    <MCModCard
-                        href="under-construction"
-                        imgBg="bg-[url('/under-construction.png')]"
-                        title="COMING SOON"
-                    >
-                        This one is not even started lol
-                    </MCModCard>
+                    {props.children}
                 </div>
             </div>
 
@@ -72,4 +62,4 @@ function MCModsContainer() {
     );
 }
 
-export default MCModsContainer;
+export default ProjectsContainer;

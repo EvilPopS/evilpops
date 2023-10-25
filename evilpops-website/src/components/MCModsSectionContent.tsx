@@ -1,14 +1,34 @@
 import React from "react";
 import styl from "../styles/MCModsSectionContent.module.css";
-import MCModsContainer from "./MCModsContainer";
+import ProjectsContainer from "./ProjectsContainer";
 import MCBlockAnimation from "./MCBlockAnimation";
+import ProjectCard from "./ProjectCard";
 
 function MCModsSectionContent() {
     return (
         <div className={`h-full bg-gray-950 relative`}>
             <div className={`h-full columns-2`}>
                 <div className={`h-full`}>
-                    <MCModsContainer />
+                    <ProjectsContainer
+                        maxCardInd={1}
+                        containerName="mc-cards-cont"
+                    >
+                        <ProjectCard
+                            href="under-construction"
+                            imgBg="bg-[url('/under-construction.png')]"
+                            title="COMING SOON"
+                        >
+                            This mod is in process of being made! Be patient my
+                            friend :)
+                        </ProjectCard>
+                        <ProjectCard
+                            href="under-construction"
+                            imgBg="bg-[url('/under-construction.png')]"
+                            title="COMING SOON"
+                        >
+                            This one is not even started lol
+                        </ProjectCard>
+                    </ProjectsContainer>
                 </div>
                 <div className={`h-full`}>
                     <div
