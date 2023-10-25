@@ -66,6 +66,13 @@ function Navbar() {
                             Minecraft mods
                         </li>
                     </a>
+                    <a href={otherProjsSectionid}>
+                        <li
+                            className={`pt-5 pb-5 hover:bg-white hover:bg-opacity-20 font-extrabold text-xl`}
+                        >
+                            Other projects
+                        </li>
+                    </a>
                 </ul>
             </div>
         </div>
