@@ -2,6 +2,7 @@ import React from "react";
 import styl from "../styles/OtherProjectsSectionContent.module.css";
 import ProjectCard from "./ProjectCard";
 import ProjectsContainer from "./ProjectsContainer";
+import { cardsInfo } from "@/configuration/otherProjCardsInformation";
 
 function OtherProjectsSectionContent() {
     return (
@@ -39,20 +40,15 @@ function OtherProjectsSectionContent() {
                         maxCardInd={1}
                         containerName="other-projs-cards-cont"
                     >
-                        <ProjectCard
-                            href="under-construction"
-                            imgBg="bg-[url('/under-construction.png')]"
-                            title="COMING SOON"
-                        >
-                            Card is under construction!!
-                        </ProjectCard>
-                        <ProjectCard
-                            href="under-construction"
-                            imgBg="bg-[url('/under-construction.png')]"
-                            title="COMING SOON"
-                        >
-                            This one is not even started lol
-                        </ProjectCard>
+                        {cardsInfo.map((cInfo) => (
+                            <ProjectCard
+                                href={cInfo.href}
+                                imgBg={cInfo.imgBg}
+                                title={cInfo.title}
+                            >
+                                {cInfo.desc}
+                            </ProjectCard>
+                        ))}
                     </ProjectsContainer>
                 </div>
             </div>

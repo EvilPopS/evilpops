@@ -3,6 +3,7 @@ import styl from "../styles/MCModsSectionContent.module.css";
 import ProjectsContainer from "./ProjectsContainer";
 import MCBlockAnimation from "./MCBlockAnimation";
 import ProjectCard from "./ProjectCard";
+import { cardsInfo } from "@/configuration/mcModCardsInformation";
 
 function MCModsSectionContent() {
     return (
@@ -13,21 +14,15 @@ function MCModsSectionContent() {
                         maxCardInd={1}
                         containerName="mc-cards-cont"
                     >
-                        <ProjectCard
-                            href="under-construction"
-                            imgBg="bg-[url('/under-construction.png')]"
-                            title="COMING SOON"
-                        >
-                            This mod is in process of being made! Be patient my
-                            friend :)
-                        </ProjectCard>
-                        <ProjectCard
-                            href="under-construction"
-                            imgBg="bg-[url('/under-construction.png')]"
-                            title="COMING SOON"
-                        >
-                            This one is not even started lol
-                        </ProjectCard>
+                        {cardsInfo.map((cInfo) => (
+                            <ProjectCard
+                                href={cInfo.href}
+                                imgBg={cInfo.imgBg}
+                                title={cInfo.title}
+                            >
+                                {cInfo.desc}
+                            </ProjectCard>
+                        ))}
                     </ProjectsContainer>
                 </div>
                 <div className={`h-full`}>
