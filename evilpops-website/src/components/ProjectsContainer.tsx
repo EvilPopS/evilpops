@@ -2,14 +2,9 @@
 
 import React from "react";
 import styl from "../styles/MCModsContainer.module.css";
+import ProjContainerProps from "@/interfaces/componentPropsInterfaces/ProjContainerProps";
 
-interface PCProps {
-    children: React.ReactNode;
-    maxCardInd: number;
-    containerName: string;
-}
-
-function ProjectsContainer(props: PCProps) {
+function ProjectsContainer(props: ProjContainerProps) {
     let currCardInd = 0;
 
     const leftArrowClick = () => {

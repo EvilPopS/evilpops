@@ -1,14 +1,8 @@
 import React from "react";
 import styl from "../styles/MCModCard.module.css";
+import ProjCardProps from "@/interfaces/componentPropsInterfaces/ProjCardProps";
 
-interface CardProps {
-    children: React.ReactNode;
-    imgBg: string;
-    href: string;
-    title: string;
-}
-
-function ProjectCard(props: CardProps) {
+function ProjectCard(props: ProjCardProps) {
     return (
         <div
             className={`w-[20rem] h-[40rem] bg-slate-800 overflow-hidden mx-[2rem] ${styl.cardStyle}`}

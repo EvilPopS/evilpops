@@ -1,11 +1,6 @@
 import React from "react";
 import styl from "../styles/BubbleLink.module.css";
-
-interface BubbleLinkProps {
-    children: React.ReactNode;
-    link: string;
-    picture: string;
-}
+import BubbleLinkProps from "@/interfaces/componentPropsInterfaces/BubbleLinkProps";
 
 function BubbleLink(props: BubbleLinkProps) {
     return (

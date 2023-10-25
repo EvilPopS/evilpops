@@ -1,9 +1,5 @@
+import PageContentHolderProps from "@/interfaces/componentPropsInterfaces/PageContentHolderProps";
 import React from "react";
-
-interface PageContentHolderProps {
-    children: React.ReactNode;
-    href: string;
-}
 
 function PageContentHolder(props: PageContentHolderProps) {
     const { children, href }: PageContentHolderProps = props;
