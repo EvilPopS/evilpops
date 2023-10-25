@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import styl from "../styles/MCModsContainer.module.css";
+import styl from "@/styles/other/ProjectsContainer.module.css";
 import ProjContainerProps from "@/interfaces/componentPropsInterfaces/ProjContainerProps";
 
 function ProjectsContainer(props: ProjContainerProps) {

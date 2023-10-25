@@ -1,7 +1,7 @@
 import React from "react";
-import styl from "@/styles/AboutMeSectionContent.module.css";
-import BoatCrossingAnimation from "./animations/BoatCrossingAnimation";
-import BubbleLink from "./BubbleLink";
+import styl from "@/styles/sections/AboutMeSectionContent.module.css";
+import BoatCrossingAnimation from "../animations/BoatCrossingAnimation";
+import BubbleLink from "../other/BubbleLink";
 
 function AboutMeSectionContent() {
     return (

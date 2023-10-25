@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "../styles/MCModCard.module.css";
+import styl from "@/styles/other/ProjectCard.module.css";
 import ProjCardProps from "@/interfaces/componentPropsInterfaces/ProjCardProps";
 
 function ProjectCard(props: ProjCardProps) {

@@ -1,8 +1,8 @@
 import React from "react";
-import styl from "../styles/MCModsSectionContent.module.css";
-import ProjectsContainer from "./ProjectsContainer";
-import MCBlockAnimation from "./animations/MCBlockAnimation";
-import ProjectCard from "./ProjectCard";
+import styl from "@/styles/sections/MCModsSectionContent.module.css";
+import ProjectsContainer from "../other/ProjectsContainer";
+import MCBlockAnimation from "../animations/MCBlockAnimation";
+import ProjectCard from "../other/ProjectCard";
 import { cardsInfo } from "@/configuration/mcModCardsInformation";
 
 function MCModsSectionContent() {

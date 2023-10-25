@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "@/styles/TopOfScreenBlur.module.css";
+import styl from "@/styles/other/TopOfScreenBlur.module.css";
 
 function TopOfScreenBlur() {
     return (

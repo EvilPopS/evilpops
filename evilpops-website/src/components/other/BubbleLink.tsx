@@ -1,5 +1,5 @@
 import React from "react";
-import styl from "../styles/BubbleLink.module.css";
+import styl from "@/styles/other/BubbleLink.module.css";
 import BubbleLinkProps from "@/interfaces/componentPropsInterfaces/BubbleLinkProps";
 
 function BubbleLink(props: BubbleLinkProps) {

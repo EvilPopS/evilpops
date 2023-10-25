@@ -1,7 +1,7 @@
 import React from "react";
-import styl from "@/styles/OtherProjectsSectionContent.module.css";
-import ProjectCard from "./ProjectCard";
-import ProjectsContainer from "./ProjectsContainer";
+import styl from "@/styles/sections/OtherProjectsSectionContent.module.css";
+import ProjectCard from "../other/ProjectCard";
+import ProjectsContainer from "../other/ProjectsContainer";
 import { cardsInfo } from "@/configuration/otherProjCardsInformation";
 
 function OtherProjectsSectionContent() {

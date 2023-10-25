@@ -1,7 +1,7 @@
-import PageContentHolder from "@/components/PageContentHolder";
-import AboutMeSectionContent from "@/components/AboutMeSectionContent";
-import MCModsSectionContent from "@/components/MCModsSectionContent";
-import OtherProjectsSectionContent from "@/components/OtherProjectsSectionContent";
+import PageContentHolder from "@/components/sections/PageContentHolder";
+import AboutMeSectionContent from "@/components/sections/AboutMeSectionContent";
+import MCModsSectionContent from "@/components/sections/MCModsSectionContent";
+import OtherProjectsSectionContent from "@/components/sections/OtherProjectsSectionContent";
 
 function HomePage() {
     return (
